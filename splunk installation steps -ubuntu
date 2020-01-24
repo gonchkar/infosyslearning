@@ -1,0 +1,23 @@
+1. Download Splunk Installer
+
+  cd /tmp && wget https://download.splunk.com/products/splunk/releases/7.1.1/linux/splunk-7.1.1-8f0ead9ec3db-linux-2.6-amd64.deb
+  
+2. Install Splunk
+
+  sudo dpkg -i splunk-7.1.1-8f0ead9ec3db-linux-2.6-amd64.deb
+  
+3. Enable the Splunk to start at boot
+
+  sudo /opt/splunk/bin/splunk enable boot-start
+  
+ 4. Start the Splunk service
+ 
+   sudo service splunk start
+   
+ 5. Check the Status of splunk service
+ 
+  sudo service splunk status
+  
+  6. Splunk will be started at port 8000. 
+  
+  You can access the application via URL http://localhost:8000 (Change localhost with public IP address of the system.)
